@@ -1,0 +1,18 @@
+<div>
+    <div class="suggestion-card">
+    {% assign type_year = page.suggestion2 %}
+    {% assign child_year = page.user.child_year %}
+    {% for item in type_year %}
+        {{ item[0] }} : {{ item[1].path }}
+        {{ child_year }}
+        {% if type_year > item %}
+        {{ item }}
+
+        <span class="suggestion-year"> item[0] 岁 </span><br/>
+        <span class="suggestion-title">分龄精华语句</span><br/>
+        <span>{{ page.suggestion.i.type }}<span><br/>
+        {% endif %} 
+    {% endfor %}
+    {{ page.title }}
+    </div>
+</div>

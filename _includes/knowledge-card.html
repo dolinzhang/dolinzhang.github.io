@@ -1,0 +1,15 @@
+<div>
+    <br/>
+    <div class="knowledge-card">
+            <span class="knowledge-type">{{ page.knowledge-card.type }}</span>
+            <h3 class="knowledge-title">{{ page.knowledge-card.title }}</h3>
+
+              {% for i in page.knowledge-card.text %}
+              <span>{{ i }} </span> <br/>
+              
+              {% endfor %}
+              {{ page.knowledge-card.text }}
+            <br/>
+
+    </div>
+</div>

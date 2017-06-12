@@ -1,0 +1,34 @@
+default:                                                      # Fallback if nothing is specified
+                             # used for author lookup in posts and for first two characters in the about page back button
+  name:         "Cindy Lu"                                # used to display author name
+  cover:        /images/mountain-cover.jpg       # OPTIONAL: defines location of cover image in about page
+  picture:      /images/Cindy.jpg                          # OPTIONAL: author picture
+  bio:          All about me                          # OPTIONAL: text below author name in posts
+  location:     China                                       # OPTIONAL: used to display location of the author
+  website:      "http://fangfang.lu"                    # OPTIONAL: link to the author of a post
+  email:                                                      # OPTIONAL: used in the about page
+  twitter:      Cindy                                # OPTIONAL: used in the about page
+  linkedin:                                                   # OPTIONAL: used in the about page
+  xing:                                                       # OPTIONAL: used in the about page
+  github:       FangfangLu                                      # OPTIONAL: used in the about page
+  stackoverflow:                                              # OPTIONAL: used in the about page
+  facebook:                                                   # OPTIONAL: used in the about page
+  gplus:                                                      # OPTIONAL: used in the about page
+  soundcloud:                                                 # OPTIONAL: used in the about page
+  youtube:                                                    # OPTIONAL: used in the about page
+  pinterest:                                                  # OPTIONAL: used in the about page
+  dribble:                                                    # OPTIONAL: used in the about page
+  behance:                                                    # OPTIONAL: used in the about page
+Weikunlin:
+  name:         "魏坤林"        
+  cover:        /images/mountain-cover.jpg  
+  picture:      /assets/dr_wei.jpg  
+  bio:          美国宾夕法尼亚州立大学博士，北京大学心理系教授、博士生导师，《最强大脑》科学评审，爱贝睿儿童实验室主任。
+  location:     中国 
+Chenxin:
+  name:         "陈忻"        
+  cover:        /images/mountain-cover.jpg  
+  picture:      /assets/pro_cx.jpg 
+  bio:          美国康涅狄格大学心理学博士，美国儿童发展研究协会会员。爱贝睿家长教练。两个孩子的妈妈。育儿名师，著有畅销书《养育的选择》、《高效能父母的 21 个教子习惯》 
+  location:     美国  
+     

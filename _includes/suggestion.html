@@ -1,0 +1,20 @@
+<div>
+    <div class="suggestion-card">
+            {% case suggestion %}
+            {% when '0-3' %}
+            // {{ label.title }}
+            <span class="suggestion-year"> 0-3 岁 </span><br/>
+            <span class="suggestion-title">分龄精华语句</span><br/>
+            <span>{{ page.suggestion.0-3.type }}<span><br/>
+            {% when '3-4' %}
+            <span class="suggestion-year"> 3-4 岁 </span><br/>
+            <span class="suggestion-title">分龄精华语句</span><br/>
+            <span>{{ page.suggestion.3-4.type }}<span><br/>
+            {% else %}
+            <span class="suggestion-year"> 5-6 岁 </span><br/>
+            <span class="suggestion-title">分龄精华语句</span><br/>
+            <span>{{ page.suggestion.5-6.type }}<span><br/>
+{% endcase %}
+
+    </div>
+</div>

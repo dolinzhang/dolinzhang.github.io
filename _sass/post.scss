@@ -1,0 +1,325 @@
+.author-image {
+    .img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.single-post {
+    .post-content .post-title , .post-meta{
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .post-content img {
+        max-width: 700px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .post-content h5 {
+        color: grey;
+    }
+
+    .post-content .ibrlist {
+        text-align: left;
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .post-content .hello-card {
+        max-width: 500px;
+        margin: 0 auto;
+        border: 2px solid pink;
+        border-radius: 5px;
+        padding: 2px 5px;
+        line-height: 0.5em;
+    }
+
+    .post-content .hello-name {
+        font-size: 20px;
+    }
+
+    .post-content .ibrlist-index {
+        border: 1px solid white;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: pink;
+        margin-right: 5px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .suggestion-card {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .post-content .suggestion-year {
+        color: white;
+        background: pink;
+        border: 1px solid pink;
+        padding: 5px;
+        text-align: left;
+
+    }
+    .post-content .video-view {
+        text-align: center; 
+        margin-bottom: 15px;
+    }
+
+    .post-content .suggestion-title {
+        color: pink;
+        font-style: solid;
+        text-align: left;
+
+
+    }
+
+
+    .post-content .knowledge-card {
+        max-width: 500px;
+        margin: auto;
+        border: 2px solid pink;
+        border-radius: 5px;
+        position: relative;
+        padding: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .post-content .knowledge-type {
+        font-size: 20px;
+        font-sytle: solid;
+        margin-left: 20px;
+        color: white;
+        top: -20px;
+        left: 0px;
+        position: absolute;
+        border: 2px solid pink;
+        padding: 0 10px;
+        background: pink;
+        border-radius: 5px;
+    }
+
+    .post-content .knowledge-title {
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    .post-content .book-card {
+        text-align: center;
+
+    }
+
+    .post-meta {
+        margin: 20px auto 0;
+    }
+
+    .post-content {
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    .post-title {
+        font-size: 5rem;
+    }
+
+    .large {
+        img {
+            max-width: none;            
+        }
+    }
+
+    figure {
+        position: relative;
+        margin-bottom: 25px;
+
+        &.left, &.right, &.large {
+            figcaption {
+                position: static;
+                width: auto;
+                text-align: center;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: none;
+            }
+        }
+
+        &.large {
+            max-width: none;
+            width: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &.left {
+            float: left;
+            margin: 20px 20px 20px 0;
+        }
+
+        &.right {
+            float: right;
+            margin: 20px 0 20px 20px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    figcaption {
+        position: absolute;
+        top: 0;
+        right: 670px;
+        font-style: italic;
+        text-align: right;
+        width: 180px;
+        padding-top: 10px;
+        line-height: 1.5;
+        color: #999;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: gray;
+        }
+    }
+
+    img[src*='#right'], img[src*='#left'] {
+        width: auto;
+        height: auto;
+    }
+
+    img[src*='#right'] {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+
+    img[src*='#left'] {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+
+    .album {
+        height: 400px;
+        white-space: nowrap;
+        background: rgba(250, 250, 250, 0.8);
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        user-select: none;
+        margin: 30px 0;
+
+        img {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+            border: 3px solid rgba($color-white, 0.5);
+            box-shadow: 0 3px 5px rgba($color-black, 0.3);
+            margin: 0 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        figure {
+            margin: 0 10px;
+            width: auto;
+            max-width: none;
+            height: 100%;
+            display: inline-block;
+
+            img {
+                margin: 0;
+            }
+        }
+
+        figcaption {
+            position: absolute;
+            width: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px 5px 5px;
+            top: auto;
+            color: $color-white;
+            text-align: center;
+            background: linear-gradient(to top, rgba($color-black,0.8) 0%, rgba($color-black,0) 100%);
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+.post-content {
+    img {
+        cursor: pointer;
+    }
+    a {
+        text-decoration: underline;
+    }
+
+    ol,
+    ul {
+        padding-left: 3rem;
+    }
+
+    ol ol,
+    ul ul,
+    ul ol,
+    ol ul {
+        margin: 0 0 0.4em 0;
+        padding-left: 2em;
+    }
+
+    ol p,
+    ul p {
+        width: 100%;
+        margin-bottom: auto;
+    }
+}
+
+.short-diver {
+    text-align: center; 
+}
+
+.ds-thread, #disqus_thread {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.fluid-width-video-wrapper {
+    max-width: 650px;
+    margin: auto;
+    padding: 0;
+}
